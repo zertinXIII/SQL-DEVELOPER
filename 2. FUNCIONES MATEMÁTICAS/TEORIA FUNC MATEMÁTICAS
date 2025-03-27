@@ -1,11 +1,12 @@
--------------------------------------------------  RESUMEN DE COMANDOS -----------------------------------------------------------------------------------------------------------------
+------------------------------------------------  RESUMEN DE COMANDOS -----------------------------------------------------------------------------------------------------------------
 
- Las funciones matemáticas realizan operaciones con expresiones numéricas y retornan un resultado, operan con tipos de datos numéricos.
+-- Las funciones matemáticas realizan operaciones con expresiones numéricas y retornan un resultado, operan con tipos de datos numéricos.
 
- Las funciones numéricas aceptan parámetros de entrada de tipo numérico y retornan valores numéricos.
- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- Las funciones numéricas aceptan parámetros de entrada de tipo numérico y retornan valores numéricos.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  
- 1. RETORNAR VALOR ABSOLUTO ' abs(x) ' 
+1. RETORNAR VALOR ABSOLUTO ' abs(x) ' 
  
   select abs (-20) 
   from dual
