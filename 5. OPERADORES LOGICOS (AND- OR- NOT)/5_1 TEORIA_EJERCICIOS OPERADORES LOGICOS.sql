@@ -28,13 +28,13 @@
  
  -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
--- 1. recuperar todos los libros cuyo autor sea igual a "Borges" y cuyo precio  supere los 20 pesos, necesitamos 2 condiciones:
+1. recuperar todos los libros cuyo autor sea igual a "Borges" y cuyo precio  supere los 20 pesos, necesitamos 2 condiciones:
  
  SELECT *
  FROM LIBROS 
     WHERE (AUTOR = 'Borges') AND (PRECIO >=20);
  
--- 2. Queremos ver los libros cuyo autor sea "Borges" y/o cuya editorial sea "Planeta":
+2. Queremos ver los libros cuyo autor sea "Borges" y/o cuya editorial sea "Planeta":
 
  SELECT * 
  FROM LIBROS
