@@ -29,56 +29,56 @@ create table libros(
  insert into libros values('Alicia en el pais de las maravillas','Lewis Carroll','Emece','29/11/2000',19.95);
  insert into libros values('Alicia en el pais de las maravillas','Lewis Carroll','Planeta','27/11/2004',15);
  
--- 1.  Recuperamos los registros ordenados por el título:
+1.  Recuperamos los registros ordenados por el título:
 
  SELECT * 
  FROM LIBROS 
  ORDER BY TITULO;
 
--- 2. Ordenamos los registros por el campo "precio", referenciando el campo por su posición en la lista de selección:
+2. Ordenamos los registros por el campo "precio", referenciando el campo por su posición en la lista de selección:
 
-SELECT *
-FROM LIBROS 
-ORDER BY 5;
+  SELECT *
+  FROM LIBROS 
+  ORDER BY 5;
 
--- 3. Los ordenamos por "editorial", de mayor a menor empleando "desc":
+3. Los ordenamos por "editorial", de mayor a menor empleando "desc":
 
 SELECT *
 FROM LIBROS
 ORDER BY EDITORIAL DESC;
 
--- 4. Ordenamos por dos campos:
+4. Ordenamos por dos campos:
 
 SELECT *
 FROM LIBROS
 ORDER BY EDITORIAL, AUTOR;
 
--- 5. Ordenamos en distintos sentidos:
+5. Ordenamos en distintos sentidos:
 
 SELECT *
 FROM LIBROS
 ORDER BY EDITORIAL ASC, AUTOR DESC;
 
--- 6. Podemos ordenar por un campo que no se lista en la selección (EJEMPLO:por PRECIO):
+6. Podemos ordenar por un campo que no se lista en la selección (EJEMPLO:por PRECIO):
 
 SELECT TITULO, AUTOR
 FROM LIBROS
 ORDER BY PRECIO;
 
--- 7. Está permitido ordenar por valores calculados, lo hacemos:
+7. Está permitido ordenar por valores calculados, lo hacemos:
 -- Seleccionaremos por titulo , editorial y precio con descuento (10%) y ordenamos por editorial.
 
 SELECT TITULO, EDITORIAL, PRECIO+(PRECIO*0.1)"PRECIO CON DESCUENTO"
 FROM LIBROS
 ORDER BY EDITORIAL;
 
--- 8. Ordenamos los libros por la fecha de edición:
+8. Ordenamos los libros por la fecha de edición:
 
 SELECT  TITULO, EDITORIAL, EDICION 
 FROM LIBROS
 ORDER BY EDICION;
 
--- 9. Mostramos el título y año de edición de todos los libros, ordenados por año de edición:
+9. Mostramos el título y año de edición de todos los libros, ordenados por año de edición:
 
 SELECT TITULO,  EXTRACT (YEAR FROM EDICION) "EDICION"
 FROM LIBROS
