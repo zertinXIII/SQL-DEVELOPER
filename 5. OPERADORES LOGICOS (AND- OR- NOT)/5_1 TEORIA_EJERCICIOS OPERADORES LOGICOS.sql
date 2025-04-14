@@ -40,17 +40,17 @@
  FROM LIBROS
     WHERE  (AUTOR = 'Borges') OR (EDITORIAL = 'Planeta');
     
--- 3. Queremos recuperar los libros que NO cumplan la condición dada, por ejemplo, aquellos cuya editorial NO sea "Planeta":
+3. Queremos recuperar los libros que NO cumplan la condición dada, por ejemplo, aquellos cuya editorial NO sea "Planeta":
 
  SELECT *
  FROM LIBROS
     WHERE NOT EDITORIAL='Planeta';
 
--- Los paréntesis se usan para encerrar condiciones, para que se evalúen como una sola expresión.
+Los paréntesis se usan para encerrar condiciones, para que se evalúen como una sola expresión.
 
--- Cuando explicitamos varias condiciones con diferentes operadores lógicos (combinamos "and", "or") permite establecer el orden de prioridad de la evaluación; además permite diferenciar las expresiones más claramente.
+Cuando explicitamos varias condiciones con diferentes operadores lógicos (combinamos "and", "or") permite establecer el orden de prioridad de la evaluación; además permite diferenciar las expresiones más claramente.
 
--- Por ejemplo, las siguientes expresiones devuelven un resultado diferente:
+Por ejemplo, las siguientes expresiones devuelven un resultado diferente:
 -- 4. Obtener todos los libros cuyo autor sea 'Borges' o aquellos que pertenezcan a la editorial 'Paidos' y tengan un precio menor a 20.
  SELECT *
  FROM libros
