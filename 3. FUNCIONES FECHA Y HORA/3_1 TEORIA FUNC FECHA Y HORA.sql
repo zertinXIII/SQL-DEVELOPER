@@ -3,7 +3,7 @@
 
 -------------------------------------------------  RESUMEN DE COMANDOS ------------------------------------------------------------------
 
---Las funciones de FECHAS Y HORAS operan con tipos de datos "date". 
+-- Las funciones de FECHAS Y HORAS operan con tipos de datos "date". 
 
 -----------------------------------------------------------------------------------------------------------------------------------------
 

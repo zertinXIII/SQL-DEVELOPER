@@ -3,11 +3,11 @@
 
  -------------------------------------------------  RESUMEN DE COMANDOS --------------------------------------------------------------------------------------------------------------
 
- -- Hemos visto los operadores relacionales: = (igual), <> (distinto), > (mayor), < (menor), >= (mayor o igual), <= (menor o igual), is null/is not null (si un valor es NULL o no).
+Hemos visto los operadores relacionales: = (igual), <> (distinto), > (mayor), < (menor), >= (mayor o igual), <= (menor o igual), is null/is not null (si un valor es NULL o no).
 
- -- Otro operador relacional es 'BETWEEN', trabajan con intervalos de valores.
+Otro operador relacional es 'BETWEEN', trabajan con intervalos de valores.
 
- -- Hasta ahora, para recuperar de la tabla "libros" los libros con precio mayor o igual a 20 y menor o igual a 40, usamos 2 condiciones unidas por el operador lógico "and":
+Hasta ahora, para recuperar de la tabla "libros" los libros con precio mayor o igual a 20 y menor o igual a 40, usamos 2 condiciones unidas por el operador lógico "and":
 
  select *from libros
   where precio>=20 and precio<=40;
