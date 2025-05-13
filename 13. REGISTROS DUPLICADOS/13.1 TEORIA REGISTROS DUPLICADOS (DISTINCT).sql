@@ -54,7 +54,7 @@ También puede utilizarse con "group by" para contar los diferentes autores por 
   from libros
   group by editorial;
   
-La cláusula "distinct" afecta a todos los campos presentados. 
+La cláusula "distinct" AFECTA A TODOS LOS CAMPOS PRESENTADOS. 
 Para mostrar los títulos y editoriales de los libros sin repetir títulos ni editoriales, usamos:
 
  select distinct titulo,editorial
