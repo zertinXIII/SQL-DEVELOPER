@@ -64,3 +64,4 @@ caso de "Garcia Juan", que código de provincia nulo y "Garcia Paco", que tiene 
     JOIN PROVINCIAS P
     ON C.CODIGOPROVINCIA=P.CODIGO
         WHERE P.NOMBRE='Santa Fe';
+
