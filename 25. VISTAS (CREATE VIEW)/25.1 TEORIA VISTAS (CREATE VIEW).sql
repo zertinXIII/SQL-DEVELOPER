@@ -74,6 +74,7 @@ se emplean los nombres de los campos o alias (que en este caso habría que agreg
 Los nombres que se colocan entre paréntesis deben ser tantos como los campos o expresiones que se definen en la vista.
 
 Las vistas se crean en la base de datos activa.
+Las vistas se crean en la base de datos activa.
 
 Al crear una vista, Oracle verifica que existan las tablas a las que se hacen referencia en ella; no se puede crear una vista que referencie tablas inexistentes. 
 No se puede crear una vista si existe un objeto con ese nombre.
