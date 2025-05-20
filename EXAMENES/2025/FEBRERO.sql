@@ -87,7 +87,8 @@ INSERT INTO pedido (id, total, fecha, id_cliente, id_comercial) VALUES (10, 250.
         ON C.ID=P.ID_CLIENTE
     JOIN COMERCIAL CO
         ON P.ID_COMERCIAL=CO.ID
-        WHERE CO.NOMBRE='Daniel' AND CO.APELLIDO1='Sáez' AND CO.APELLIDO2='Vega';
+        WHERE 
+            CO.NOMBRE='Daniel' AND CO.APELLIDO1='Sáez' AND CO.APELLIDO2='Vega';
         
 
 1.4. (0,5 pto) Utilizando Join resuelve. Clientes que realizaron un pedido en 2017 con cantidad entre 300€ y 1000€
@@ -96,8 +97,9 @@ INSERT INTO pedido (id, total, fecha, id_cliente, id_comercial) VALUES (10, 250.
  FROM CLIENTE C
     JOIN PEDIDO P
         ON C.ID=P.ID_CLIENTE
-            WHERE EXTRACT (YEAR FROM P.FECHA)=2017 
-                AND P.TOTAL BETWEEN 300 AND 1000;
+            WHERE 
+                EXTRACT (YEAR FROM P.FECHA)=2017 
+                    AND P.TOTAL BETWEEN 300 AND 1000;
 
 1.5. ( 0,5 pto) Devuelve un listado con todos los comerciales junto con los datos de los pedidos que han realizado( id y total). 
 Este listado también debe incluir los comerciales que no han realizado ningún pedido. 
@@ -175,7 +177,9 @@ Se ha de sacar el id, nombre, apellidos, ciudad y categoría.
  FROM CLIENTE C
  LEFT JOIN PEDIDO P
     ON C.ID=P.ID_CLIENTE
- WHERE EXTRACT (YEAR FROM P.FECHA)=2017
-    AND P.TOTAL= (SELECT MAX(TOTAL)
-                  FROM PEDIDO 
-                    WHERE EXTRACT (YEAR FROM FECHA)=2017);
+ WHERE 
+    EXTRACT (YEAR FROM P.FECHA)=2017
+        AND P.TOTAL= (SELECT MAX(TOTAL)
+                      FROM PEDIDO 
+                         WHERE 
+                            EXTRACT (YEAR FROM FECHA)=2017);
