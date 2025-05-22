@@ -33,7 +33,7 @@ Dentro del ciclo debe haber una estructura condicional que controle que el núme
 
 3. Cree una función que reciba un valor entero y retorne el factorial de tal número; el factorial se obtiene multiplicando el valor que recibe por el anterior hasta llegar a multiplicarlo por uno)
 
-    SET SERVEROUTPUT ON; -- Activa la visualización de mensajes de salida en la consola.
+     SET SERVEROUTPUT ON; -- Activa la visualización de mensajes de salida en la consola.
 
     CREATE OR REPLACE FUNCTION F_FACTORIAL(AVALOR NUMBER) -- recibe un valor entero, que será del cual calcularemos su factorial
         RETURN NUMBER -- Retorna el factorial del numero
